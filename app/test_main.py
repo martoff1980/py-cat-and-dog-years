@@ -10,7 +10,7 @@ def test_should_return_one_when_ages_are_between_15_and_23() -> None:
     assert get_human_age(20, 20) == [1, 1]
 
 
-def test_should_return_two_when_ages_are_between_24_and_next_threshold() -> None:
+def test_should_return_two_when_age_is_24() -> None:
     assert get_human_age(24, 24) == [2, 2]
 
 
