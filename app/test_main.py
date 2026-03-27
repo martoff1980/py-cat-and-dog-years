@@ -1,5 +1,12 @@
 from app.main import get_human_age
 
+def test_returns_zero_for_age_14() -> None:
+    assert get_human_age(14, 14) == [0, 0]
+
+
+def test_returns_one_for_age_15() -> None:
+    assert get_human_age(15, 15) == [1, 1]
+
 
 def test_should_return_zero_when_both_ages_are_less_than_15() -> None:
     assert get_human_age(10, 10) == [0, 0]
